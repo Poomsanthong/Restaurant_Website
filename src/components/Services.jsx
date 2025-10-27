@@ -30,7 +30,7 @@ const Services = () => {
         <div className="container">
           {/* Header section */}
           <div className="text-center mb-20 max-w-[400px] mx-auto">
-            <p className="text-sm bg-clip-text text-transparent bg-linear-to-r from-primary to-scondary font-semibold mb-2">
+            <p className="text-sm bg-clip-text text-transparent bg-linear-to-r from-primary to-secondary font-semibold mb-2">
               Our Offerings
             </p>
             <h1 className="text-3xl font-bold">Services</h1>
@@ -45,7 +45,7 @@ const Services = () => {
             {servicesData.map(({ id, img, name, description }) => (
               <div
                 key={id}
-                className="md:scale-120 max-w-[300px] group rounded-2xl bg-white dark:bg-gray-600 hover:bg-primary hover:text-white duration-300 p-4 shadow-xl"
+                className="md:scale-105 max-w-[300px] group rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary hover:text-white duration-300 p-4 shadow-xl"
               >
                 <div className="h-full">
                   <img
@@ -54,7 +54,7 @@ const Services = () => {
                     className="max-w-[200px] mx-auto block transform -translate-y-14 group-hover:scale-110  group-hover:rotate-6 duration-300"
                   />
                   <h1 className="text-lg font-bold">{name}</h1>
-                  <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">
+                  <p className="text-gray-500 dark:text-gray-300 group-hover:text-white duration-300 text-sm line-clamp-2">
                     {description}
                   </p>
                 </div>

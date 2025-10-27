@@ -49,7 +49,7 @@ const Testimonial = () => {
       <div className="container py-20 ">
         {/* Header section */}
         <div className="text-center mb-20 max-w-[400px] mx-auto">
-          <p className="text-sm bg-clip-text text-transparent bg-linear-to-r from-primary to-scondary font-semibold mb-2">
+          <p className="text-sm bg-clip-text text-transparent bg-linear-to-r from-primary to-secondary font-semibold mb-2">
             Testimonial
           </p>
           <h1 className="text-3xl font-bold">Testimonial</h1>

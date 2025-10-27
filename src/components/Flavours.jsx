@@ -35,10 +35,10 @@ const Flavours = () => {
   ];
 
   return (
-    <section className=" relative w-full min-h-[320px] sm:min-h-[420px] lg:min-h-[550px] rounded-2xl overflow-hidden shadow">
+    <section className="relative w-full min-h-80 sm:min-h-[420px] lg:min-h-[550px] rounded-2xl overflow-hidden shadow">
       {/* Left image */}
       <div data-aos="slide-up" data-aos-duration="300" className="container">
-        <div className="grid grid-cols-1  sm:grid-cols-2   gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <img
             src={FlavorsImg}
             alt="food image "
@@ -75,7 +75,7 @@ const Flavours = () => {
                 <img
                   src={card.img}
                   alt={card.title}
-                  className="w-full h-32 object-cover rounded-md mb-4"
+                  className="w-full h-24 lg:h-28 object-contain rounded-md mb-4"
                 />
                 <h3 className="text-xl font-semibold text-center">
                   {card.title}

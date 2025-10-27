@@ -20,38 +20,38 @@ const NavBar = () => {
             <ul className="hidden sm:flex gap-6 text-lg font-medium">
               <li>
                 <a
-                  href=""
-                  className="inline-block py-4 px-4 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-dark transition-colors duration-200"
+                  href="#"
+                  className="inline-block py-4 px-4 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors duration-200"
                 >
                   Home
                 </a>
               </li>
               <li>
                 <a
-                  href=""
-                  className="inline-block py-4 px-4 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-dark transition-colors duration-200"
+                  href="#menu"
+                  className="inline-block py-4 px-4 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors duration-200"
                 >
                   Menu
                 </a>
               </li>
               <li>
                 <a
-                  href=""
-                  className="inline-block py-4 px-4 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-dark transition-colors duration-200"
+                  href="#about"
+                  className="inline-block py-4 px-4 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors duration-200"
                 >
                   About
                 </a>
               </li>
               <li>
                 <a
-                  href=""
-                  className="inline-block py-4 px-4 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-dark transition-colors duration-200"
+                  href="#contact"
+                  className="inline-block py-4 px-4 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors duration-200"
                 >
                   Contact
                 </a>
               </li>
             </ul>
-            <button className="flex items-center bg-gradient-to-r from-primary to-secondary hover:scale-105 text-white py-2 px-4 rounded-full transition-all duration-300 shadow-lg">
+            <button className="flex items-center bg-linear-to-r from-primary to-secondary hover:scale-105 text-white py-2 px-4 rounded-full transition-all duration-300 shadow-lg">
               Order
               <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer ml-2" />
             </button>
