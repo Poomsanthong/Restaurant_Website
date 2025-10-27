@@ -6,6 +6,8 @@ import Banner from "./components/Banner";
 import Flavours from "./components/Flavours";
 import Testimonial from "./components/Testimonial";
 import Footer from "./components/Footer";
+import { Analytics } from "@vercel/analytics/next";
+
 const App = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors">
@@ -16,6 +18,7 @@ const App = () => {
       <Flavours />
       <Testimonial />
       <Footer />
+      <Analytics />
     </div>
   );
 };
