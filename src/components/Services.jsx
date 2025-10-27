@@ -7,20 +7,23 @@ const Services = () => {
     {
       id: 1,
       img: food3,
-      name: "Service 1",
-      description: "Description for service 1",
+      name: "Fast Delivery",
+      description:
+        "Enjoy hot and fresh meals delivered to your door within 30 minutes, guaranteed.",
     },
     {
       id: 2,
       img: food3,
-      name: "Service 2",
-      description: "Description for service 2",
+      name: "Fresh Ingredients",
+      description:
+        "We use locally sourced, high-quality ingredients to craft every dish with care.",
     },
     {
       id: 3,
       img: food3,
-      name: "Service 3",
-      description: "Description for service 3",
+      name: "Custom Orders",
+      description:
+        "Personalize your meal just the way you like extra spicy, no onions, or gluten-free.",
     },
   ];
 
@@ -41,7 +44,7 @@ const Services = () => {
             </p>
           </div>
           {/*  Card Services grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-14 md:gap-5 place-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-14 md:gap-5 place-items-center text-center justify-center">
             {servicesData.map(({ id, img, name, description }) => (
               <div
                 key={id}
