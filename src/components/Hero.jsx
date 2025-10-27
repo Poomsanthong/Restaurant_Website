@@ -45,7 +45,7 @@ const Hero = () => {
               </h1>
               <p className="text-sm">Experience the best dining with us.</p>
               <div className="">
-                <button className="bg-main hover:bg-blue-600 text-white py-3 px-6 rounded-full hover:scale-105 transition-all duration-300 shadow-lg mt-4">
+                <button className="bg-gradient-to-r from-primary to-secondary hover:bg-blue-600 text-white py-3 px-6 rounded-full hover:scale-105 transition-all duration-300 shadow-lg mt-4">
                   Explore Menu
                 </button>
               </div>
@@ -53,12 +53,24 @@ const Hero = () => {
             {/* { images } */}
 
             <div className="order-1 sm:order-2 min-h-[450px] sm:min-h-[300px] flex justify-center items-center relative">
-              <div>
+              <div className="flex justify-center items-center h-[300px] sm:h-[450px] overflow-hidden">
                 <img
                   src={ImageID}
                   alt="Food Image"
                   className="w-[300px] sm:w-[400px] mx-auto spin"
                 />
+              </div>
+              {/* { image selector } */}
+              <div className="flex lg:flex-col absolute lg:top-1/2 lg:translate-y-[-50%] lg:py-2 justify-center gap-4  bottom-[0px] lg:-right-10 bg-white/30 rounded-full ">
+                {ImageList.map(({ id, img }) => (
+                  <img
+                    key={id}
+                    src={img}
+                    alt={`Food ${id}`}
+                    className="max-w-[80px] h-[80px] object-contain inline-block hover:scale-105 duration-200"
+                    onClick={() => setImageID(img)}
+                  />
+                ))}
               </div>
             </div>
           </div>
