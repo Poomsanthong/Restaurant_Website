@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
+/* Dark Mode Variant  For :enabled to toggle dark mode styles*/
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Spin Animation*/
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -15,6 +17,30 @@
 }
 
 @theme {
+  /* Color Settings */
   --color-primary: #ffc001;
   --color-secondary: #ff9c01;
+
+  /* Container Settings */
+  --container-center: true; /* Center container by default */
+  --container-padding: 1rem; /* Default padding */
+  --container-padding-sm: 3rem; /* For screens >= 640px */
+  --container-max-sm: 640px; /* Mobile */
+  --container-max-md: 768px; /* Tablet */
+  --container-max-lg: 1024px; /* Laptop */
+  --container-max-xl: 1280px; /* Desktop */
+  --container-max-2xl: 1400px; /* Large Desktop */
+}
+
+.container {
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+  max-width: var(--container-max-2xl);
+}
+
+@media (min-width: 640px) {
+  /* For screens >= 640px */
+  .container {
+    padding-inline: var(--container-padding-sm);
+  }
 }

@@ -1,6 +1,6 @@
-import food1 from "../assets/food1.png";
-import food2 from "../assets/food2.png";
-import food3 from "../assets/food3.png";
+import food1 from "../assets/Massaman_curry.png";
+import food2 from "../assets/Red_curry.png";
+import food3 from "../assets/Green_curry.png";
 import bgImg from "../assets/bg-image.png";
 
 import { useState } from "react";
@@ -45,12 +45,12 @@ const Hero = () => {
               </h1>
               <p className="text-sm">Experience the best dining with us.</p>
               <div className="">
-                <button className="bg-gradient-to-r from-primary to-secondary hover:bg-blue-600 text-white py-3 px-6 rounded-full hover:scale-105 transition-all duration-300 shadow-lg mt-4">
+                <button className="bg-linear-to-r from-primary to-secondary hover:bg-blue-600 text-white py-3 px-6 rounded-full hover:scale-105 transition-all duration-300 shadow-lg mt-4">
                   Explore Menu
                 </button>
               </div>
             </div>
-            {/* { images } */}
+            {/* { Main image } */}
 
             <div className="order-1 sm:order-2 min-h-[450px] sm:min-h-[300px] flex justify-center items-center relative">
               <div className="flex justify-center items-center h-[300px] sm:h-[450px] overflow-hidden">
@@ -61,14 +61,17 @@ const Hero = () => {
                 />
               </div>
               {/* { image selector } */}
-              <div className="flex lg:flex-col absolute lg:top-1/2 lg:translate-y-[-50%] lg:py-2 justify-center gap-4  bottom-[0px] lg:-right-10 bg-white/30 rounded-full ">
+              <div className="absolute flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 bottom-[-30px] lg:-right-10 bg-white/30 rounded-full">
                 {ImageList.map(({ id, img }) => (
                   <img
                     key={id}
                     src={img}
                     alt={`Food ${id}`}
-                    className="max-w-[80px] h-[80px] object-contain inline-block hover:scale-105 duration-200"
-                    onClick={() => setImageID(img)}
+                    className="max-w-[70px] h-[80px] object-contain inline-block hover:scale-105 duration-200"
+                    // onClick={() => setImageID(img)} // simpler way
+                    onClick={() =>
+                      setImageID(id === 1 ? food1 : id === 2 ? food2 : food3)
+                    }
                   />
                 ))}
               </div>
