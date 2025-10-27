@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import DarkModeIcon from "../assets/dark-mode-button.png";
 import LightModeIcon from "../assets/light-mode-button.png";
 
+// Component to toggle between dark and light modes
 const DarkMode = () => {
   const getInitialTheme = () => {
     const stored = localStorage.getItem("theme");
