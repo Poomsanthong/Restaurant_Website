@@ -3,7 +3,11 @@ import bannerImage from "../assets/banner-bg.jpg";
 
 const Banner = () => {
   return (
-    <section className="relative w-full min-h-80 sm:min-h-[420px] lg:min-h-[550px] rounded-2xl overflow-hidden shadow">
+    <section
+      data-aos="slide-up"
+      data-duration="400"
+      className="relative w-full min-h-80 sm:min-h-[420px] lg:min-h-[550px] rounded-2xl overflow-hidden shadow"
+    >
       {/* Background image */}
       <img
         src={bannerImage}

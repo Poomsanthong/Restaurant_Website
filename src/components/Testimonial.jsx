@@ -60,7 +60,11 @@ const Testimonial = () => {
           </p>
         </div>
         {/*  Testimonial grid */}
-        <div className="grid grid-cols-1 max-w-[600px] gap-6 mx-auto">
+        <div
+          data-aos="fade-up"
+          data-duration="400"
+          className="grid grid-cols-1 max-w-[600px] gap-6 mx-auto"
+        >
           <Slider {...settings}>
             {TestimonialData.map(({ img, content, id, name }) => (
               <div key={id} className="my-6">

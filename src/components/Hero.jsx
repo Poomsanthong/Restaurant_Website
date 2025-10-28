@@ -37,7 +37,12 @@ const Hero = () => {
         style={bgImage}
       >
         <div className="container pb-8 sm:pb-0">
-          <div className="grid grid-cols-1 sm:grid-cols-2 ">
+          <div
+            data-aos="zoom-out"
+            data-duaration="400"
+            data-aos-once="true"
+            className="grid grid-cols-1 sm:grid-cols-2 "
+          >
             {/* { text content} */}
             <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
@@ -61,7 +66,7 @@ const Hero = () => {
                 />
               </div>
               {/* { image selector } */}
-              <div className="absolute right-4 top-1/2 -translate-y-1/2 z-10 flex flex-col items-center gap-2 bg-white/40 backdrop-blur-md p-1 rounded-xl shadow">
+              <div className="absolute  top-1/2 sm:right-0 sm:flex-col -translate-y-1/2 z-10 flex flex-1 items-center gap-2 bg-white/40 backdrop-blur-md p-1 rounded-xl shadow">
                 {ImageList.map(({ id, img }) => (
                   <img
                     key={id}

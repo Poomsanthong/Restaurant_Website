@@ -48,6 +48,8 @@ const Services = () => {
             {servicesData.map(({ id, img, name, description }) => (
               <div
                 key={id}
+                data-aos="zoom-in"
+                data-duration="400"
                 className="md:scale-105 max-w-[300px] group rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary hover:text-white duration-300 p-4 shadow-xl"
               >
                 <div className="h-full">
