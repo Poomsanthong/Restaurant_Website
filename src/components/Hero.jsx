@@ -66,7 +66,7 @@ const Hero = () => {
                 />
               </div>
               {/* { image selector } */}
-              <div className="absolute  top-1/2 sm:right-0 sm:flex-col -translate-y-1/2 z-10 flex flex-1 items-center gap-2 bg-white/40 backdrop-blur-md p-1 rounded-xl shadow">
+              <div className="absolute  top-1/1 sm:right-0 sm:flex-col -translate-y-1/2 z-10 flex flex-1 items-center gap-2 bg-white/40 backdrop-blur-md p-1 rounded-xl shadow">
                 {ImageList.map(({ id, img }) => (
                   <img
                     key={id}
